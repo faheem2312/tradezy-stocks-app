@@ -1,0 +1,15 @@
+import Link from "next/link";
+
+const FooterLink = ({ text, linkText, href }: FooterLinkProps) => {
+    return (
+        <div style={{textAlign: 'center',padding: '1.5rem',}}>
+            <p className="text-sm text-gray-500">
+                {text}{` `}
+                <Link href={href} className="footer-link">
+                    {linkText}
+                </Link>
+            </p>
+        </div>
+    )
+}
+export default FooterLink
